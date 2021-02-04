@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Contact Page">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Contact,Message">
+  <meta name="author" content="Ayush Shrestha">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="../css/topnav.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <style type="text/css">
+  .font{
+    color:white;
+  }
+  form{
+    margin-top:50px;
+  }
+
+  .form-control{
+    width:600px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline:none;
+    color: white;
+    font-size:18px;
+    margin-bottom:16px;
+  }
+
+  input{
+    height:45px;
+  }
+
+  form .submit{
+    background: #00637E;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight:bold;
+    font-family:Raleway;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top:20px;
+  }
+
+  form .submit:hover{
+    background-color: #013C64;
+    cursor: pointer;
+  }
+  /*Styling the placeholder*/
+  ::placeholder{
+    color:white;
+  }
+  </style>
+</head>
+<body class="font" style=" background: url(../img/bimg.jpg); background-size:cover;margin:0px;font-family:Raleway;text-align:center;">
+  <!--creating a wrapper class-->
+  <div>
+    <!--creating a navigation bar-->
+    <div class="topnav">
+      <nav>
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="blogindex.html">Blog</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="ITblog.html">Internet Tech.</a>
+            <a href="timemachine.html">Time Machine?</a>
+            <a href="oloy.html">OLOy RAM</a>
+            <a href="livingbots.html">Cellular Robots</a>
+          </div>
+        </div>
+        <a href="research.html">Research</a>
+        <a class="active" href="./contact.html">Contact</a>
+        <a href="./CV.html">About</a>
+      </nav>
+      <!--end navigation-->
+      <div id="MyClockDisplay" class="clock" onload="showTime()" style="float:right;"><script src="../js/clock.js"></script></div>
+    </div>
+    <!--start of contact us title-->
+    <div>
+      <h4 align="center"> GOT A QUESTION?</h3>
+        <h1 align="center"> Contact Us </h1>
+        <h4 align="center"> We're here to help and answer any question you might have.<br>We look forward to hearing from you :D</h3>
+        </div>
+        <!--start of form application-->
+        <div class="contact-form">
+          <form name="contact-form" onsubmit="validateForm()">
+            <input name="name" type="text" class="form-control" placeholder="Your Name">
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email">
+            <br>
+            <textarea name="message" class="form-control" placeholder="Enter your Message" row="4"></textarea>
+            <br>
+            <input type="submit" class="form-control submit" value="Send Message">
+          </form>
+        </div>
+        <!--javascript-->
+        <script type="text/javascript">
+        function validateForm(){
+          var fullname = document.forms["contact-form"]["name"].value;
+          var email = document.forms["contact-form"]["email"].value;
+          var msg = document.forms["contact-form"]["message"].value;
+
+          if (fullname == "" && email == "" && msg == ""){
+            alert("You are testing me, aren't you? Otherwise Fill in all the fields!");
+          }
+          else if(fullname==""){
+            alert("Hey! Enter your name!");
+          }
+          else if(email==""){
+            alert("I respect your privacy but I require your email");
+          }
+          else if(msg==""){
+            alert("Hey! Enter your message");
+          }
+          else{
+            alert("Thank you");
+          }
+        }
+        </script>
+        <!--end of wrapper-->
+      </div>
+      <!--footer-->
+      <div class="footer-bottom" style="margin-top:3%">
+        &copy; Ayush Shrestha
+      </div>
+    </body>
+    </html>

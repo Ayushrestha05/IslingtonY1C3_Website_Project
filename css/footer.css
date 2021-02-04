@@ -1,0 +1,33 @@
+/*FOOTER*/
+.footer{
+  background-color: #303036;
+  color: #d3d3d3;
+  height:400px;
+}
+
+.footer-content{
+   height: 350px;
+}
+.footer-bottom{
+  background-color: #343a40;
+  color: #686868;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer-about{
+  width:33%;
+  height:99%;
+  float:left;
+}
+.footer-links{
+  width:33%;
+  height:99%;
+  float:left;
+}
+.footer-social{
+  width:33%;
+  height:99%;
+  float:left;
+}

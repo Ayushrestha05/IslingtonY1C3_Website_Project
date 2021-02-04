@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Internet Technologies">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Blog,Internet,Technology">
+  <meta name="author" content="Ayush Shrestha">
+  <title>Internet Technologies</title>
+  <link rel="stylesheet" type="text/css" href="../css/topnav.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <style type="text/css">
+  .slider {
+    width: 95%;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+  }
+
+  .slider  img
+  {
+    width: 100%;
+    height: 500px;
+  }
+  </style>
+</head>
+<body style=" background-color:#000120;font-family:Raleway; color: white;">
+  <!--creating a wrapper div-->
+  <div>
+    <!--creating a navigation bar-->
+    <div class="topnav">
+      <nav>
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a class="active" href="blogindex.html">Blog</a>
+          </button>
+          <div class="dropdown-content">
+            <a class="active" href="./ITblog.html">Internet Tech.</a>
+            <a href="./timemachine.html">Time Machine?</a>
+            <a href="./oloy.html">OLOy RAM</a>
+            <a href="./livingbots.html">Cellular Robots</a>
+          </div>
+        </div>
+        <a href="research.html">Research</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./CV.html">About</a>
+      </nav>
+      <!--end navigation-->
+      <div id="MyClockDisplay" class="clock" onload="showTime()" style="float:right;"><script src="../js/clock.js"></script></div>
+    </div>
+    <!--title of blog-->
+    <div>
+      <h1 align="center">Internet Technologies</h1>
+      <!--end of title of blog-->
+    </div>
+    <!--main text here-->
+    <div style="margin-left:80px;margin-right:80px">
+      <div class="slider">
+        <div id="img">
+          <img src="../img/slide_pics/inttech/2.jpg">
+        </div>
+      </div>
+      <script>
+      var images = ['../img/slide_pics/inttech/1.jpeg', '../img/slide_pics/inttech/2.jpg', '../img/slide_pics/inttech/3.jpg', '../img/slide_pics/inttech/4.jpg', '../img/slide_pics/inttech/5.png'];
+      var x = 0;
+      var imgs = document.getElementById('img');
+      setInterval(slider, 2000);
+      function slider() {
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+      </script>
+
+      <div>
+        <p>
+          Internet technology is the ability of the Internet to transmit information and data through different servers and systems.
+          Internet technology is important in many different industries as it allows people to communicate with each other through means that were not necessarily available.
+        </p>
+        <p>
+          The Internet is essentially a large database where all different types of information can be passed and transmitted.
+          It can be passively passed along in the form of non-interactive websites and blogs; it can also be actively passed along in the form of file sharing and document loading.
+          Internet technology has led to a wealth of information available to anyone who is able to access the Internet. It has allowed people who were accustomed to textbooks and libraries to learn anything they could want from the comfort of a computer.
+        </p>
+        <p>
+          Internet technology is constantly improving and is able to speed up the information highway that it has created.
+          With the technologies powering the Internet, speeds are faster, more information is available and different processes are done that were not possible in the past.
+          Internet technology has changed, and will continue to change, the way that the world does business and how people interact in daily life.
+        </p>
+      </div>
+      <div>
+        <h2>Uses in day to day life</h3>
+          <p>Uses of the Internet in our daily life is depending on desires and goals. Activities in our daily life are decided after the use of the Internet.  The Internet innovated our daily life. We spend lots of time on the Web gaining positive and negative knowledge.</p>
+          <p>Positive use of Internet makes our lives easy and simple. It provides us useful data, information, and knowledge for personal, social and economic development and it is up to us to utilize our time on World Wide Web in productive manner. The Internet is a revolution in information technology. The Internet is a sea of data and information in which a little dip can speed up and change the way we live and do business. That’s why it is really important and challenging to use the Internet in as many of our daily life activities as possible. The use of the Internet in education is providing new opportunities for both students and educators alike.
+          </p>
+          <div>
+            <p>It is estimated that about 95% of all information available has been digitized and made accessible via the internet. The internet has also led to a complete transformation in communication, availability of knowledge as well as social interaction. However, as with all major technological changes, there are positive and negative effects of the internet on the society too.</p>
+            <br>
+            The positive impacts of the internet include the following:
+            <br>
+            <ul>
+              <li>It provides effective communication using emailing and instant messaging services to any part of the world.</li>
+              <li>It improves business interactions and transactions, saving on vital time.</li>
+              <li>Banking and shopping online have made life less complicated.</li>
+              <li>Anyone can access the latest news from any part of the world without depending on the TV or newspaper.</li>
+              <li>Education has received a huge boost as uncountable books and journals are available online from libraries across the world. This has made research easier. Students can now opt for online courses using the internet.</li>
+              <li>Application for jobs has also become easier as most vacancies are advertised online with online applications becoming the norm.</li>
+              <li>Professionals can now exchange information and materials online, thus enhancing research.</li>
+            </ul>
+            <br>
+            The negative impacts of the internet on society include:
+            <ul>
+              <li>Easy availability of illegal or inappropriate materials online that isn’t age-suitable.</li>
+              <li>Addiction to social networks can disrupt an individual’s life, both personally and professionally.</li>
+              <li>Some people use the internet to hack into people’s accounts for criminal activities including stealing data or banking information.</li>
+            </ul>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h1 style="margin-left:10px">Author</h1>
+            <p style="margin-left:20px;margin-right:20px;">Ayush 'BR33Z3' Shrestha is a computer enthusiast who loves to code and is fascinated by how the computer graphics has gone better every year. He does not have any tattoos but thinks it would be cool to get one. In his off time, he streams games and tries to learn C# to create games.</p>
+          </div>
+          <div class="footer-links">
+            <h1 style="margin-left:10px">Address</h1>
+            Islington College,Kamal Marg, Kathmandu 44600
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575676!2d85.32379891439125!3d27.708702682791337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1579161529744!5m2!1sen!2snp" width="370" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="footer-social">
+            <h1 style="margin-left:10px">Socials</h1>
+            <ul style="list-style-type: none;">
+              <li><a href="https://www.facebook.com/RaDBR33Z3"><img src="../img/fbsocial.png" height=60px></a></li>
+              <li><a href="https://www.twitter.com/ayushrestha005"><img src="../img/twittersocial.png" height=60px></a></li>
+              <li><a href="https://www.twitch.tv/radbr33z3"><img src="../img/twitchsocial.png" height=60px></a></li>
+              <li><a href="https://www.mixer.com/BR33Z3"><img src="../img/Mixer.jpg" height=60px></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; Ayush Shrestha
+        </div>
+      </div>
+      <!--end of wrapper div-->
+    </div>
+  </body>
+  </html>

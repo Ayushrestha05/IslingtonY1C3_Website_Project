@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Blog Index Page">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Blog,Index">
+  <meta name="author" content="Ayush Shrestha">
+  <title>Blog Home</title>
+  <link rel="stylesheet" type="text/css" href="../css/topnav.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <style type="text/css">
+  .flex {
+    display:flex;
+  }
+  .ss{
+    width:35%;
+  }
+  .bs{
+    width:65%;
+  }
+  .button {
+    color: White;
+    border: 2px solid #4CAF50;
+    background-color: #000120;
+    border-radius: 15px;
+    height:50px;
+    width:100px;
+  }
+  .button:hover {
+    background-color: #846644;
+    color:White;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  </style>
+</head>
+<body style=" background-color:#00013A;font-family:Raleway; color: white;">
+  <!--creating a wrapper div-->
+  <div>
+    <!--creating a navigation bar-->
+    <div class="topnav">
+      <nav>
+        <a href="../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a class="active" href="blogindex.html">Blog</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="./ITblog.html">Internet Tech.</a>
+            <a href="./timemachine.html">Time Machine?</a>
+            <a href="./oloy.html">OLOy RAM</a>
+            <a href="./livingbots.html">Cellular Robots</a>
+          </div>
+        </div>
+        <a href="research.html">Research</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./CV.html">About</a>
+      </nav>
+      <!--end navigation-->
+      <div id="MyClockDisplay" class="clock" onload="showTime()" style="float:right;"><script src="../js/clock.js"></script></div>
+    </div>
+    <!--title div-->
+    <div style="text-align:center;">
+      <h1>Blog Index</h1>
+      <!--end of title div-->
+    </div>
+    <!--start of main blog titles-->
+    <div style="overflow:hidden">
+      <!-- blog blocks-->
+      <div class="flex" style="overflow: hidden;background-color:#A2A3BB;margin:10px;">
+        <div class="ss"style="float:left;height:300px;overflow: hidden;">
+          <img src="../img/inttech.jpg" style="width:100%; height:100% ;align:center;">
+        </div>
+        <div class="bs" style="float:right;height:300px;">
+          <h1 style="margin-left:5px">Internet Technologies</h1>
+          <p style="margin-left:10px">
+            Internet technology is the ability of the Internet to transmit information and data through different servers and systems.
+            Internet technology is important in many different industries as it allows people to communicate with each other through means that were not necessarily available.
+          </p>
+          <div style="text-align:center;">
+            <a href="ITblog.html"><button class="button" name="button">Read More.</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex" style="overflow: hidden; margin:10px; background-color:#A2A3BB;">
+        <div class="bs" style="float:left;height:275px;">
+          <h1 style="margin-left:5px">Man Knows How to Build a Time Machine</h1>
+          <p style="margin-left:10px">
+            The tenured University of Connecticut physics professor recently told CNN that he’s written a scientific equation that could serve as the foundation for an actual time machine.
+            He’s even built a prototype device to illustrate a key component of his theory — though Mallett’s peers remain unconvinced that his time machine will ever come to fruition.
+          </p>
+          <div style="text-align:center;">
+            <a href="timemachine.html"><button class="button" name="button">Read More.</button></a>
+          </div>
+        </div>
+        <div class="ss" style="float:right;height:275px;">
+          <img src="../img/timemachine.jpg" style="width:100%; height:100% ;align:center;">
+        </div>
+      </div>
+      <div class="flex" style="overflow: hidden;margin:10px; background-color:#A2A3BB;">
+        <div class="ss" style="float:right;height:265px;">
+          <img src="../img/oloy.jpg" style="width:100%;height:100%">
+        </div>
+        <div class="bs" style=" float:left;height:265px;">
+          <h1 style="margin-left:10px">OLOy RAM</h1>
+          <p style="margin-left:10px">
+            OLOy-branded RAM is some of the cheapest memory on the market, but is this largely heard-of brand reliable and performant enough to buy?
+          </p>
+          <div style="text-align:center;">
+            <a href="oloy.html"><button class="button" name="button">Read More.</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex" style="overflow: hidden; margin:15px; background-color:#A2A3BB;">
+        <div class="bs" style=" float:left;height:300px;">
+          <h1 style="margin-left:5px">Scientists Have Built The First-Ever Robots Constructed Entirely Out of Living Cells</h1>
+          <p style="margin-left:10px">
+            In another lifetime, if they had been allowed to follow their natural development, the stem cells taken from embryonic frogs would have turned into skin and heart tissue within living, breathing animals.
+            Instead, in configurations designed by algorithms and constructed by humans, those cells have been assembled into something new: the first-ever robots constructed entirely out of living cells.
+          </p>
+          <div style="text-align:center;">
+            <a href="livingbots.html"><button class="button" name="button">Read More.</button></a>
+          </div>
+        </div>
+        <div class="ss" style=" float:right;height:300px;">
+          <img src="../img/livebots.jpg" style="margin: 5px; width:100%; height:100% ;align:center;">
+        </div>
+      </div>
+      <!--end of main blog titles-->
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h1 style="margin-left:10px">Author</h1>
+          <p style="margin-left:20px;margin-right:20px;">Ayush 'BR33Z3' Shrestha is a computer enthusiast who loves to code and is fascinated by how the computer graphics has gone better every year. He does not have any tattoos but thinks it would be cool to get one. In his off time, he streams games and tries to learn C# to create games.</p>
+        </div>
+        <div class="footer-links">
+          <h1 style="margin-left:10px">Address</h1>
+          Islington College,Kamal Marg, Kathmandu 44600
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575676!2d85.32379891439125!3d27.708702682791337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1579161529744!5m2!1sen!2snp" width="370" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="footer-social">
+          <h1 style="margin-left:10px">Socials</h1>
+          <ul style="list-style-type: none;">
+            <li><a href="https://www.facebook.com/RaDBR33Z3"><img src="../img/fbsocial.png" height=60px></a></li>
+            <li><a href="https://www.twitter.com/ayushrestha005"><img src="../img/twittersocial.png" height=60px></a></li>
+            <li><a href="https://www.twitch.tv/radbr33z3"><img src="../img/twitchsocial.png" height=60px></a></li>
+            <li><a href="https://www.mixer.com/BR33Z3"><img src="../img/Mixer.jpg" height=60px></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Ayush Shrestha
+      </div>
+    </div>
+  </div>
+</body>
+</html>
